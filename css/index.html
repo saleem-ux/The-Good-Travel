@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The-Good-Travel</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h2>The Good Travel</h2>
+    </header>
+    <main>
+        <div id="form-container">
+            <form id="form">
+                <label for="placeName">Place Name</label>
+                <br>
+                <input type="text" name="name">
+                <br>
+                <br>
+                <label for="trip place">Trip place</label>
+                <br>
+                <select name="place" id="place">
+                    <option value="HAWAII">HAWAII</option>
+                    <option value="LONDON">LONDON</option>
+                    <option value="PARIS">PARIS</option>
+                    <option value="ITALY">ITALY</option>
+                    <option value="SLOVAKIA">SLOVAKIA</option>
+                    <option value="MALAYSIA">MALAYSIA</option>
+                </select>
+                <br>
+                <br>
+                <label for="Type Of Transport">Type Of Transport</label>
+                <br>
+                <select name="type" id="type">
+                    <option value="car">Car</option>
+                    <option value="cruise">cruise</option>
+                    <option value="flight">Flight</option>
+                    <option value="train">Train</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" name="submit">
+            </form>
+        </div>
+        <div id="table">
+            <table id="tablelist"></table>
+
+        </div>
+        <div id="clear">
+            <button id="X">clear</button>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="../js/app.js"></script>
+    
+</body>
+</html>

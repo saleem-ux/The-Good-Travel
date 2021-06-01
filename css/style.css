@@ -1,0 +1,40 @@
+/* font-family: 'Righteous', cursive; */
+
+body{
+    height: 2000px;
+}
+Header{
+ background-color: rgba(202, 240, 251, 255); 
+ width: 100%;  
+ height: 80px;
+ text-align: center;
+ font-size: 40px;
+ padding-top: 10px;
+ font-family: 'Righteous', cursive;
+} 
+main{
+    width: 100%;
+    display: inline-block;
+    margin: 40px;
+    font-family: 'Righteous', cursive;
+    height: 400px;
+}
+form{
+    background-color: #5d4b7696;
+    float: left;
+    width: 20%;
+    height: 200px;
+}
+#table{
+    background-color: #5d4b7696;
+    height: 200px;
+}
+#tablelist{
+    background-color: #fffdfe88;
+    float: right;
+}
+
+Footer{
+    background-color: #f376a288;
+    height: 80px;
+}
