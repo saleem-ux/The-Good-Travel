@@ -5,8 +5,7 @@ let showTable = document.getElementById('tablelist')
 let photoArray = ['img/HAWAII.jpg', 'img/ITALY.png', 'img/LONDON.png', 'img/MALAYSIA.jpg', 'img/PARIS.jpg', 'img/SLOVAKIA.jpg']
 let tripArray = [];
 
-function Trip(photo, placeName, tripPlace, transport){
-    this.photo = photo;
+function Trip(placeName, tripPlace, transport){
     this.name = placeName;
     this.trip = tripPlace;
     this.transport = transport;
@@ -30,22 +29,26 @@ function userSubmit(event){
 }
 
 Trip.prototype.renderItems = function(){
-    let tableRow1 = document.createElement('tr');
     let tableRow2 = document.createElement('tr');
     let tableRow3 = document.createElement('tr');
     let tableRow4 = document.createElement('tr');
+    let tableRow5 = document.createElement('img');
+
 
     
-    showTable.appendChild(tableRow1);
+    
+    
+    
+    
     showTable.appendChild(tableRow2);
     showTable.appendChild(tableRow3);
     showTable.appendChild(tableRow4);
-
-    tableRow1.textContent = '';
+    showTable.appendChild(tableRow5);
+    
     tableRow2.textContent = `Place Name: ${this.name}`;
     tableRow3.textContent = `Trip place: ${this.trip}`;
     tableRow4.textContent = `Type of transport: ${this.transport}`;
-
+    tableRow5.setAttribute('src', `img/${this.trip}.jpg`);
 
 }
 
@@ -63,21 +66,22 @@ function getItem(){
 
 function keepRenderTrip(){
     for (let i = 0; i < tripArray.length; i++) {
-    let tableRow1 = document.createElement('tr');
     let tableRow2 = document.createElement('tr');
     let tableRow3 = document.createElement('tr');
     let tableRow4 = document.createElement('tr');
+    let tableRow5 = document.createElement('img');
+
 
     
-    showTable.appendChild(tableRow1);
     showTable.appendChild(tableRow2);
     showTable.appendChild(tableRow3);
     showTable.appendChild(tableRow4);
+    showTable.appendChild(tableRow5);
 
-    // tableRow1.textContent = '';
     tableRow2.textContent = `Place Name: ${tripArray[i].name}`;
     tableRow3.textContent = `Trip place: ${tripArray[i].trip}`;
     tableRow4.textContent = `Type of transport: ${tripArray[i].transport}`;
+    tableRow5.setAttribute('src', `img/${tripArray[i].trip}.jpg`);
     }
 
 }
